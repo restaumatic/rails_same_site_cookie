@@ -1,5 +1,11 @@
 # RailsSameSiteCookie
 
+### Difference between the original gem
+
+Relaxed dependency on the user_agent_parser gem from version 2.5 to 2.3.
+
+### Original description
+
 This gem sets the SameSite=None directive on all cookies coming from your Rails app that are missing the SameSite directive. This behavior can also be limited to only requests coming from a specific user agent.
 
 This is useful because in February 2020 Chrome will start treating any cookies without the SameSite directive set as though they are SameSite=Lax(https://www.chromestatus.com/feature/5088147346030592). This is a breaking change from the previous default behavior which was to treat those cookies as SameSite=None. See [this explanation](https://web.dev/samesite-cookies-explained/) for more information on the SameSite directive and the reasons for this change.
